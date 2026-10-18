@@ -1,0 +1,12 @@
+build/
+deps/
+testmedia/
+dist/
+*.log
+*.user
+.vs/
+CMakeUserPresets.json
+bench-results*/
+bench-results-*
+build_*.txt
+uibench_timeline.png

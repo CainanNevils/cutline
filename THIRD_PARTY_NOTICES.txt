@@ -1,0 +1,32 @@
+Cutline - third-party components
+================================
+
+Cutline is free software: you can redistribute it and/or modify it under the terms of the GNU
+General Public License as published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version (see LICENSE). It is distributed in the hope that it
+will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.
+
+Cutline's source code: https://github.com/CainanNevils/cutline (each release's source is the
+commit tagged with its version, and the "Source code" archive on its release page).
+
+The release packages also contain the following components, each under its own license.
+
+FFmpeg (avcodec, avformat, avfilter, avutil, swresample, swscale, ffmpeg.exe, ffprobe.exe)
+  License: GNU GPL version 3 (this build enables GPL and version-3 components, including
+  libx264 and libx265). https://ffmpeg.org/legal.html
+  Build: the "win64-gpl-shared" build from https://github.com/BtbN/FFmpeg-Builds; the exact
+  FFmpeg version is printed by "tools\ffmpeg.exe -version". Each Cutline release on GitHub
+  attaches the FFmpeg source code of the version it ships; the scripts that build it and the
+  versions of every library compiled into it are in the FFmpeg-Builds repository above.
+
+Qt 6.8 (Qt6Core, Qt6Gui, Qt6Widgets, Qt6Svg, Qt6Multimedia, Qt6Network and their plugins)
+  License: GNU LGPL version 3 (dynamically linked: you may replace the Qt DLLs with your own
+  build). Copyright (C) The Qt Company Ltd. and other contributors.
+  Source code: https://download.qt.io/archive/qt/6.8/6.8.3/single/
+
+doctest 2.4.12 (unit tests only)  - MIT License, Copyright (c) 2016-2025 Viktor Kirilov
+nlohmann/json 3.12.0              - MIT License, Copyright (c) 2013-2025 Niels Lohmann
+
+Microsoft Visual C++ runtime (msvcp140*.dll, vcruntime140*.dll, concrt140.dll)
+  Redistributed under the Microsoft Visual Studio redistributable license terms.
